@@ -1,0 +1,2115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML/CSS Cheatsheet</title>
+		<link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		</head>
+	<body>
+		<div>
+			<h1>My HTML & CSS Cheatsheet</h1>
+		</div>
+		<div>
+			<table>
+				<colgroup>
+					<col style="width: 200px">
+					<col style="width: 400px">
+					<col style="width: 800px">
+				</colgroup>
+				<thead class="html-table">
+					<tr>
+						<th scope="col">Tag</th>
+						<th scope="col">Name</th>
+						<th scope="col">Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td id="column-one">&lt!--...--&gt</td>
+						<td>Defines a comment</td>
+						<td><p>!--This is a comment. Comments are not displayed in the browser--&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&lt!DOCTYPE&gt</td>
+						<td>Defines the document type</td>
+						<td><p>&lt!DOCTYPE html&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&lta&gt</td>
+						<td>Defines a hyperlink</td>
+						<td><p>&lta href="url"&gtText&lt/a&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltabbr&gt</td>
+						<td>Defines an abbreviation or an acronym</td>
+						<td><p>The &ltabbr title="World Health Organization"&gtWHO&lt/abbr&gt was founded in 1948.</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltaddress&gt
+						<td>Defines contact information for the author/owner of a document
+						<td><p>&ltaddress&gt</p>	
+					<p>Written by &lta href="mailto:webmaster@example.com"&gtJon Doe&lt/a&gt.&ltbr&gt</p>
+					<p>Visit us at:&ltbr&gt</p>	
+					<p>Example.com&ltbr&gt</p>
+					<p>Box 564, Disneyland&ltbr&gt</p>	
+					<p>USA</p>
+						<p>&lt/address&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltarea&gt
+						<td>Defines an area inside an image map
+						<td><p>&ltimg src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379"&gt</p>
+						<p></p>
+						<p>&ltmap name="workmap"&gt</p>
+						<p>&ltarea shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"&gt</p>
+						<p>&ltarea shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"&gt</p>
+						<p>&ltarea shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm"&gt</p>
+						<p>&lt/map&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltarticle&gt
+						<td>Defines an article
+						<td><p>&ltarticle&gt</p>
+						<p>&lth2&gtGoogle Chrome&lt/h2&gt</p>
+						<p>&ltp&gtGoogle Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!&lt/p&gt</p>
+						<p>&lt/article&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltaside&gt
+						<td>Defines content aside from the page content
+						<td><p>&ltaside&gt</p>
+						<p>&lth4&gtEpcot Center&lt/h4&gt</p>
+						<p>&ltp&gtEpcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.&lt/p&gt</p>
+						<p>&lt/aside&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltaudio&gt
+						<td>Defines embedded sound content
+						<td><p>&ltaudio controls&gt</p>	<p>&ltsource src="horse.ogg" type="audio/ogg"&gt</p>
+						<p>&ltsource src="horse.mp3" type="audio/mpeg"&gt</p>
+						<p>Your browser does not support the audio tag.</p>
+						<p>&lt/audio&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltb&gt</td>
+						<td>Defines bold text</td>
+						<td><p>&ltp&gtThis is normal text - &ltb&gtand this is bold text&lt/b&gt.&lt/p&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltbase&gt
+						<td>Specifies the base URL/target for all relative URLs in a document
+						<td><p>&lthead&gt</p>
+						<p>&ltbase href="https://www.w3schools.com/" target="_blank"&gt</p>
+						<p>&lt/head&gt</p>
+						<p></p>	<p>&ltbody&gt</p>
+						<p>&ltimg src="images/stickman.gif" width="24" height="39" alt="Stickman"&gt</p>
+						<p>&lta href="tags/tag_base.asp"&gtHTML base Tag&lt/a&gt</p>
+						<p>&lt/body&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltbdi&gt
+						<td>Isolates a part of text that might be formatted in a different direction from other text outside it
+						<td><p>&ltul&gt</p>
+						<p>&ltli&gtUser &ltbdi&gthrefs&lt/bdi&gt: 60 points&lt/li&gt</p>
+						<p>&ltli&gtUser &ltbdi&gtjdoe&lt/bdi&gt: 80 points&lt/li&gt</p>
+						<p>&ltli&gtUser &ltbdi&gtإيان&lt/bdi&gt: 90 points&lt/li&gt</p>
+						<p>&lt/ul&gt</p></td>
+					</tr>
+					<tr>
+						<td id="column-one">&ltbdo&gt
+						<td>Overrides the current text direction
+						<td><p>&ltbdo dir="rtl"&gt</p>
+						<p>This text will go right-to-left.</p>
+						<p>&lt/bdo&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltblockquote&gt
+						<td>Defines a section that is quoted from another source
+						<td><p>&ltblockquote cite="http://www.worldwildlife.org/who/index.html"&gt</p>
+						<p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+						<p>&lt/blockquote&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltbody&gt
+						<td>Defines the document's body
+						<td><p>&lthtml&gt</p>
+						<p>&lthead&gt</p>
+						<p>&lttitle&gtTitle of the document&lt/title&gt</p>	<p>&lt/head&gt</p>
+						<p></p>
+						<p>&ltbody&gt</p>
+						<p>&lth1&gtThis is a heading&lt/h1&gt</p>
+						<p>&ltp&gtThis is a paragraph.&lt/p&gt</p>
+						<p>&lt/body&gt</p>
+						<p></p>
+						<p>&lt/html&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltbr&gt</td>
+						<td>Defines a single line break</td>
+						<td><p>&ltp&gtTo force&ltbr&gt line breaks&ltbr&gt in a text,&ltbr&gt use the br&ltbr&gt element.&lt/p&gt</p></td>
+					</tr>
+					<tr>
+						<td id="column-one">&ltbutton&gt</td>
+						<td>Defines a clickable button</td>
+						<td><p>&ltbutton type="button"&gtClick Me!&lt/button&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltcanvas&gt
+						<td>Used to draw graphics, on the fly, via scripting (usually JavaScript)
+						<td><p>&ltcanvas id="myCanvas"&gt</p>
+						<p>Your browser does not support the canvas tag.</p>
+						<p>&lt/canvas&gt</p>
+						<p></p>
+						<p>&ltscript&gt</p>
+						<p>let canvas = document.getElementById("myCanvas");</p>
+						<p>let ctx = canvas.getContext("2d");</p>
+						<p>ctx.fillStyle = "#FF0000";</p>	<p>ctx.fillRect(0, 0, 80, 80);</p>
+						<p>&lt/script&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltcaption&gt
+						<td>Defines a table caption
+						<td><p>&lttable&gt</p>
+						<p>&ltcaption&gtMonthly savings&lt/caption&gt</p>
+						<p>&lttr&gt</p>
+						<p>&ltth&gtMonth&lt/th&gt</p>
+						<p>&ltth&gtSavings&lt/th&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lttr&gt</p>	<p>&lttd&gtJanuary&lt/td&gt</p>
+						<p>&lttd&gt$100&lt/td&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lt/table&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltcite&gt</td>
+						<td>Defines the title of a work</td>
+						<td><p>&ltp&gt&ltcite&gtThe Scream&lt/cite&gt by Edward Munch. Painted in 1893.&lt/p&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltcode&gt
+						<td>Defines a piece of computer code
+						<td><p>&ltp&gtThe HTML &ltcode&gtbutton&lt/code&gt tag defines a clickable button.&lt/p&gt</p>
+						<p></p>
+						<p>&ltp&gtThe CSS &ltcode&gtbackground-color&lt/code&gt property defines the background color of an element.&lt/p&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltcol&gt
+						<td>Specifies column properties for each column within a &ltcolgroup&gt element
+						<td><p>&lttable&gt</p>	<p>&ltcolgroup&gt</p>
+						<p>&ltcol span="2" style="background-color:red"&gt</p>
+						<p>&ltcol style="background-color:yellow"&gt</p>
+						<p>&lt/colgroup&gt</p>
+						<p>&lttr&gt</p>
+						<p>&ltth&gtISBN&lt/th&gt</p>
+						<p>&ltth&gtTitle&lt/th&gt</p>
+						<p>&ltth&gtPrice&lt/th&gt</p>
+						<p>&lt/tr&gt</p>	<p>&lttr&gt</p>
+						<p>&lttd&gt3476896&lt/td&gt</p>
+						<p>&lttd&gtMy first HTML&lt/td&gt</p>
+						<p>&lttd&gt$53&lt/td&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lt/table&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltcolgroup&gt
+						<td>Specifies a group of one or more columns in a table for formatting
+						<td><p>&lttable&gt</p>
+						<p>&ltcolgroup&gt</p>
+						<p>&ltcol span="2" style="background-color:red"&gt</p>	<p>&ltcol style="background-color:yellow"&gt</p>
+						<p>&lt/colgroup&gt</p>
+						<p>&lttr&gt</p>
+						<p>&ltth&gtISBN&lt/th&gt</p>
+						<p>&ltth&gtTitle&lt/th&gt</p>
+						<p>&ltth&gtPrice&lt/th&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lttr&gt</p>
+						<p>&lttd&gt3476896&lt/td&gt</p>
+						<p>&lttd&gtMy first HTML&lt/td&gt</p>
+						<p>&lttd&gt$53&lt/td&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lt/table&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltdata&gt
+						<td>Adds a machine-readable translation of a given content
+						<td><p>&ltul&gt</p>
+						<p>&ltli&gt&ltdata value="21053"&gtCherry Tomato&lt/data&gt&lt/li&gt</p>
+						<p>&ltli&gt&ltdata value="21054"&gtBeef Tomato&lt/data&gt&lt/li&gt</p>
+						<p>&ltli&gt&ltdata value="21055"&gtSnack Tomato&lt/data&gt&lt/li&gt</p>
+						<p>&lt/ul&gt</p></td>
+					</tr>
+					<tr>
+						<td id="column-one">&ltdatalist&gt
+						<td>Specifies a list of pre-defined options for input controls
+						<td><p>&ltlabel for="browser"&gtChoose your browser from the list:&lt/label&gt</p>
+						<p>&ltinput list="browsers" name="browser" id="browser"&gt</p>
+						<p></p>
+						<p>&ltdatalist id="browsers"&gt</p>
+						<p>&ltoption value="Edge"&gt</p>
+						<p>&ltoption value="Firefox"&gt</p>
+						<p>&ltoption value="Chrome"&gt</p>
+						<p>&ltoption value="Opera"&gt</p>
+						<p>&ltoption value="Safari"&gt</p>
+						<p>&lt/datalist&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltdd&gt
+						<td>Defines a description/value of a term in a description list
+						<td><p>&ltdl&gt</p>
+						<p>&ltdt&gtCoffee&lt/dt&gt</p>
+						<p>&ltdd&gtBlack hot drink&lt/dd&gt</p>
+						<p>&ltdt&gtMilk&lt/dt&gt</p>
+						<p>&ltdd&gtWhite cold drink&lt/dd&gt</p>
+						<p>&lt/dl&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltdel&gt</td>
+						<td>Defines text that has been deleted from a document</td>
+						<td><p>&ltp&gtMy favorite color is &ltdel&gtblue&lt/del&gt &ltins&gtred&lt/ins&gt!&lt/p&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltdetails&gt
+						<td>Defines additional details that the user can view or hide
+						<td><p>&ltdetails&gt</p>	<p>&ltsummary&gtEpcot Center&lt/summary&gt</p>
+						<p>&ltp&gtEpcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.&lt/p&gt</p>
+						<p>&lt/details&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltdfn&gt</td>
+						<td>Specifies a term that is going to be defined within the content</td>
+						<td><p>&ltp&gt&ltdfn&gtHTML&lt/dfn&gt is the standard markup language for creating web pages.&lt/p&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltdialog&gt</td>
+						<td>Defines a dialog box or window</td>
+						<td><p>&ltdialog open&gtThis is an open dialog window&lt/dialog&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltdiv&gt
+						<td>Defines a section in a document
+						<td><p>&lthtml&gt</p>
+						<p>&lthead&gt</p>
+						<p>&ltstyle&gt</p>
+						<p>.myDiv {</p>	<p>border: 5px outset red;</p>
+						<p>background-color: lightblue;</p>
+						<p>text-align: center;</p>
+						<p>}</p>
+						<p>&lt/style&gt</p>
+						<p>&lt/head&gt</p>
+						<p>&ltbody&gt</p>
+						<p></p>
+						<p>&ltdiv class="myDiv"&gt</p>	
+						<p>&lth2&gtThis is a heading in a div element&lt/h2&gt</p>
+						<p>&ltp&gtThis is some text in a div element.&lt/p&gt</p>
+						<p>&lt/div&gt</p>
+						<p></p>
+						<p>&lt/body&gt</p>
+					
+					
+						<p>&lt/html&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltdl&gt
+						<td>Defines a description list
+						<td><p>&ltdl&gt</p>
+						<p>&ltdt&gtCoffee&lt/dt&gt</p>
+						<p>&ltdd&gtBlack hot drink&lt/dd&gt</p>	
+					<p>&ltdt&gtMilk&lt/dt&gt</p>
+						<p>&ltdd&gtWhite cold drink&lt/dd&gt</p>
+					
+					
+						<p>&lt/dl&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltdt&gt
+						<td>Defines a term/name in a description list
+						<td><p>&ltdl&gt</p>
+						<p>&ltdt&gtCoffee&lt/dt&gt</p>
+						<p>&ltdd&gtBlack hot drink&lt/dd&gt</p>
+						<p>&ltdt&gtMilk&lt/dt&gt</p>
+						<p>&ltdd&gtWhite cold drink&lt/dd&gt</p>
+						<p>&lt/dl&gt</p></td>
+					</tr>
+					<tr>
+						<td id="column-one">&ltem&gt
+						<td>Defines emphasized text. The content inside is typically displayed in italic.
+						<td><p>&ltp&gtYou &ltem&gthave&lt/em&gt to hurry up!&lt/p&gt</p>
+						<p></p>
+						<p>&ltp&gtWe &ltem&gtcannot&lt/em&gt live like this.&lt/p&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltembed&gt</td>
+						<td>Defines a container for an external application</td>
+						<td><p>&ltembed type="image/jpg" src="pic_trulli.jpg" width="300" height="200"&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltfieldset&gt
+						<td>Groups related elements in a form
+						<td><p>&ltform action="/action_page.php"&gt</p>
+						<p>&ltfieldset&gt</p>
+						<p>&ltlegend&gtPersonalia:&lt/legend&gt</p>
+						<p>&ltlabel for="fname"&gtFirst name:&lt/label&gt</p>
+						<p>&ltinput type="text" id="fname" name="fname"&gt&ltbr&gt&ltbr&gt</p>	
+						<p>&ltlabel for="lname"&gtLast name:&lt/label&gt</p>
+						<p>&ltinput type="text" id="lname" name="lname"&gt&ltbr&gt&ltbr&gt</p>
+						<p>&ltlabel for="email"&gtEmail:&lt/label&gt</p>
+						<p>&ltinput type="email" id="email" name="email"&gt&ltbr&gt&ltbr&gt</p>
+						<p>&ltlabel for="birthday"&gtBirthday:&lt/label&gt</p>
+						<p>&ltinput type="date" id="birthday" name="birthday"&gt&ltbr&gt&ltbr&gt</p>
+						<p>&ltinput type="submit" value="Submit"&gt</p>
+						<p>&lt/fieldset&gt</p>
+						<p>&lt/form&gt</p></td>
+					</tr>
+					<tr>
+						<td id="column-one">&ltfigcaption&gt
+						<td>Defines a caption for a &ltfigure&gt element
+						<td><p>&ltfigure&gt</p>
+						<p>&ltimg src="pic_trulli.jpg" alt="Trulli" style="width:100%"&gt</p>
+						<p>&ltfigcaption&gtFig.1 - Trulli, Puglia, Italy.&lt/figcaption&gt</p>
+						<p>&lt/figure&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltfigure&gt
+						<td>Specifies self-contained content
+						<td><p>&ltfigure&gt</p>
+						<p>&ltimg src="pic_trulli.jpg" alt="Trulli" style="width:100%"&gt</p>
+						<p>&ltfigcaption&gtFig.1 - Trulli, Puglia, Italy.&lt/figcaption&gt</p>
+						<p>&lt/figure&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltfooter&gt
+						<td>Defines a footer for a document or section
+						<td><p>&ltfooter&gt</p>	<p>&ltp&gtAuthor: Hege Refsnes&lt/p&gt</p>
+						<p>&ltp&gt&lta href="mailto:hege@example.com"&gthege@example.com&lt/a&gt&lt/p&gt</p>
+						<p>&lt/footer&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltform&gt
+						<td>Defines an HTML form for user input
+						<td><p>&ltform action="/action_page.php" method="get"&gt</p>
+						<p>&ltlabel for="fname"&gtFirst name:&lt/label&gt</p>
+						<p>&ltinput type="text" id="fname" name="fname"&gt&ltbr&gt&ltbr&gt</p>
+						<p>&ltlabel for="lname"&gtLast name:&lt/label&gt</p>
+						<p>&ltinput type="text" id="lname" name="lname"&gt&ltbr&gt&ltbr&gt</p>
+						<p>&ltinput type="submit" value="Submit"&gt</p>
+						<p>&lt/form&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&lth1&gt to &lth6&gt</td>
+						<td>Defines HTML headings</td>
+						<td><p>&lth1&gtThis is heading 1&lt/h1&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&lthead&gt
+						<td>Contains metadata/information for the document
+						<td><p>&lt!DOCTYPE html&gt</p>
+						<p>&lthtml lang="en"&gt</p>
+						<p>&lthead&gt</p>
+						<p>&lttitle&gtTitle of the document&lt/title&gt</p>
+						<p>&lt/head&gt</p>
+						<p>&ltbody&gt</p>
+						<p></p>	<p>&lth1&gtThis is a heading&lt/h1&gt</p>
+						<p>&ltp&gtThis is a paragraph.&lt/p&gt</p>
+						<p></p>
+						<p>&lt/body&gt</p>
+						<p>&lt/html&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltheader&gt
+						<td>Defines a header for a document or section
+						<td><p>&ltarticle&gt</p>
+						<p>&ltheader&gt</p>
+						<p>&lth1&gtA heading here&lt/h1&gt</p>
+						<p>&ltp&gtPosted by John Doe&lt/p&gt</p>	<p>&ltp&gtSome additional information here&lt/p&gt</p>
+						<p>&lt/header&gt</p>
+						<p>&ltp&gtLorem Ipsum dolor set amet....&lt/p&gt</p>
+						<p>&lt/article&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&lthgroup&gt
+						<td>Defines a header and related content
+						<td><p>&lthgroup&gt</p>
+						<p>&lth2&gtNorway&lt/h2&gt</p>
+						<p>&ltp&gtThe land with the midnight sun.&lt/p&gt</p>
+						<p>&lt/hgroup&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&lthr&gt
+						<td>Defines a thematic change in the content
+						<td><p>&lth1&gtThe Main Languages of the Web&lt/h1&gt</p>	
+					<p></p>
+						<p>&ltp&gtHTML is the standard markup language for creating Web pages. HTML describes the structure of a Web page, and consists of a series of elements. HTML elements tell the browser how to display the content.&lt/p&gt</p>
+						<p></p>
+						<p>&lthr&gt</p>
+						<p></p>
+						<p>&ltp&gtCSS is a language that describes how HTML elements are to be displayed on screen, paper, or in other media. CSS saves a lot of work, because it can control the layout of multiple web pages all at once.&lt/p&gt</p>
+						<p></p>
+						<p>&lthr&gt</p>
+						<p></p>
+						<p>&ltp&gtJavaScript is the programming language of HTML and the Web. JavaScript can change HTML content and attribute values. JavaScript can change CSS. JavaScript can hide and show HTML elements, and more.&lt/p&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&lthtml&gt
+						<td>Defines the root of an HTML document
+						<td><p>&lt!DOCTYPE html&gt</p>
+						<p>&lthtml lang="en"&gt</p>
+						<p>&lthead&gt</p>
+						<p>&lttitle&gtTitle of the document&lt/title&gt</p>
+						<p>&lt/head&gt</p>
+						<p>&ltbody&gt</p>
+						<p></p>
+						<p>&lth1&gtThis is a heading&lt/h1&gt</p>	
+					<p>&ltp&gtThis is a paragraph.&lt/p&gt</p>
+						<p></p>
+						<p>&lt/body&gt</p>
+					
+					
+						<p>&lt/html&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&lti&gt
+						<td>Defines a part of text in an alternate voice or mood
+						<td><p>&ltp&gt&lti&gtLorem ipsum&lt/i&gt is the most popular filler text in history.&lt/p&gt</p>
+						<p></p>
+						<p>&ltp&gtThe &lti&gtRMS Titanic&lt/i&gt, a luxury steamship, sank on April 15, 1912 after striking an iceberg.&lt/p&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltiframe&gt</td>
+						<td>Defines an inline frame</td>
+						<td><p>&ltiframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials"&gt&lt/iframe&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltimg&gt</td>
+						<td>Defines an image</td>
+						<td><p>&ltimg src="img_girl.jpg" alt="Girl in a jacket" width="500" height="600"&gt</p></td>
+					</tr>
+					<tr>
+						<td id="column-one">&ltinput&gt
+						<td>Defines an input control
+						<td><p>&ltform action="/action_page.php"&gt</p>
+						<p>&ltlabel for="fname"&gtFirst name:&lt/label&gt</p>
+						<p>&ltinput type="text" id="fname" name="fname"&gt&ltbr&gt&ltbr&gt</p>
+						<p>&ltlabel for="lname"&gtLast name:&lt/label&gt</p>
+						<p>&ltinput type="text" id="lname" name="lname"&gt&ltbr&gt&ltbr&gt</p>
+						<p>&ltinput type="submit" value="Submit"&gt</p>
+						<p>&lt/form&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltins&gt</td>
+						<td>Defines a text that has been inserted into a document</td>
+						<td><p>&ltp&gtMy favorite color is &ltdel&gtblue&lt/del&gt &ltins&gtred&lt/ins&gt!&lt/p&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltkbd&gt
+						<td>Defines keyboard input
+						<td><p>&ltp&gtPress &ltkbd&gtCtrl&lt/kbd&gt + &ltkbd&gtC&lt/kbd&gt to copy text (Windows).&lt/p&gt</p>	
+					<p></p>
+					
+					
+						<p>&ltp&gtPress &ltkbd&gtCmd&lt/kbd&gt + &ltkbd&gtC&lt/kbd&gt to copy text (Mac OS).&lt/p&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltlabel&gt
+						<td>Defines a label for an &ltinput&gt element
+						<td><p>&ltform action="/action_page.php"&gt</p>
+						<p>&ltinput type="radio" id="html" name="fav_language" value="HTML"&gt</p>
+						<p>&ltlabel for="html"&gtHTML&lt/label&gt&ltbr&gt</p>
+						<p>&ltinput type="radio" id="css" name="fav_language" value="CSS"&gt</p>
+						<p>&ltlabel for="css"&gtCSS&lt/label&gt&ltbr&gt</p>
+						<p>&ltinput type="radio" id="javascript" name="fav_language" value="JavaScript"&gt</p>
+						<p>&ltlabel for="javascript"&gtJavaScript&lt/label&gt&ltbr&gt&ltbr&gt</p>
+						<p>&ltinput type="submit" value="Submit"&gt</p>
+						<p>&lt/form&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltlegend&gt
+						<td>Defines a caption for a &ltfieldset&gt element
+						<td><p>&ltform action="/action_page.php"&gt</p>
+						<p>&ltfieldset&gt</p>
+						<p>&ltlegend&gtPersonalia:&lt/legend&gt</p>
+						<p>&ltlabel for="fname"&gtFirst name:&lt/label&gt</p>
+						<p>&ltinput type="text" id="fname" name="fname"&gt&ltbr&gt&ltbr&gt</p>
+						<p>&ltlabel for="lname"&gtLast name:&lt/label&gt</p>
+						<p>&ltinput type="text" id="lname" name="lname"&gt&ltbr&gt&ltbr&gt</p>	
+					<p>&ltlabel for="email"&gtEmail:&lt/label&gt</p>
+						<p>&ltinput type="email" id="email" name="email"&gt&ltbr&gt&ltbr&gt</p>
+						<p>&ltlabel for="birthday"&gtBirthday:&lt/label&gt</p>
+						<p>&ltinput type="date" id="birthday" name="birthday"&gt&ltbr&gt&ltbr&gt</p>
+						<p>&ltinput type="submit" value="Submit"&gt</p>
+						<p>&lt/fieldset&gt</p>
+						<p>&lt/form&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltli&gt
+						<td>Defines a list item
+						<td><p>&ltol&gt</p>
+						<p>&ltli&gtCoffee&lt/li&gt</p>	
+					<p>&ltli&gtTea&lt/li&gt</p>
+						<p>&ltli&gtMilk&lt/li&gt</p>
+						<p>&lt/ol&gt</p>
+						<p></p>
+						<p>&ltul&gt</p>
+						<p>&ltli&gtCoffee&lt/li&gt</p>
+						<p>&ltli&gtTea&lt/li&gt</p>
+						<p>&ltli&gtMilk&lt/li&gt</p>
+						<p>&lt/ul&gt</p></td>
+					</tr>
+					<tr>
+						<td id="column-one">&ltlink&gt
+						<td>Defines the relationship between a document and an external resource (most used to link to style sheets)
+						<td><p>&lthead&gt</p>
+						<p>&ltlink rel="stylesheet" href="styles.css"&gt</p>
+						<p>&lt/head&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltmain&gt
+						<td>Specifies the main content of a document
+						<td><p>&ltmain&gt</p>
+						<p>&lth1&gtMost Popular Browsers&lt/h1&gt</p>
+						<p>&ltp&gtChrome, Firefox, and Edge are the most used browsers today.&lt/p&gt</p>
+						<p></p>
+						<p>&ltarticle&gt</p>
+						<p>&lth2&gtGoogle Chrome&lt/h2&gt</p>	
+						<p>&ltp&gtGoogle Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!&lt/p&gt</p>
+						<p>&lt/article&gt</p>
+						<p></p>
+						<p>&ltarticle&gt</p>
+						<p>&lth2&gtMozilla Firefox&lt/h2&gt</p>
+						<p>&ltp&gtMozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.&lt/p&gt</p>
+						<p>&lt/article&gt</p>
+						<p></p>
+						<p>&ltarticle&gt</p>	<p>&lth2&gtMicrosoft Edge&lt/h2&gt</p>
+						<p>&ltp&gtMicrosoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.&lt/p&gt</p>
+						<p>&lt/article&gt</p>
+						<p>&lt/main&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltmap&gt
+						<td>Defines an image map
+						<td><p>&ltimg src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379"&gt</p>
+						<p></p>
+						<p>&ltmap name="workmap"&gt</p>
+						<p>&ltarea shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"&gt</p>
+						<p>&ltarea shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm"&gt</p>	
+					<p>&ltarea shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm"&gt</p>
+						<p>&lt/map&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltmark&gt</td>
+						<td>Defines marked/highlighted text</td>
+						<td><p>&ltp&gtDo not forget to buy &ltmark&gtmilk&lt/mark&gt today.&lt/p&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltmenu&gt
+						<td>Defines an unordered list
+						<td><p>&ltmenu&gt</p>
+						<p>&ltli&gtCoffee&lt/li&gt</p>
+						<p>&ltli&gtTea&lt/li&gt</p>
+						<p>&ltli&gtMilk&lt/li&gt</p>
+						<p>&lt/menu&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltmeta&gt
+						<td>Defines metadata about an HTML document
+						<td><p>&lthead&gt</p>	
+					<p>&ltmeta charset="UTF-8"&gt</p>
+						<p>&ltmeta name="description" content="Free Web tutorials"&gt</p>
+						<p>&ltmeta name="keywords" content="HTML, CSS, JavaScript"&gt</p>
+						<p>&ltmeta name="author" content="John Doe"&gt</p>
+						<p>&ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt</p>
+						<p>&lt/head&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltmeter&gt
+						<td>Defines a scalar measurement within a known range (a gauge)
+						<td><p>&ltlabel for="disk_c"&gtDisk usage C:&lt/label&gt</p>
+						<p>&ltmeter id="disk_c" value="2" min="0" max="10"&gt2 out of 10&lt/meter&gt&ltbr&gt</p>
+						<p></p>	
+					<p>&ltlabel for="disk_d"&gtDisk usage D:&lt/label&gt</p>
+						<p>&ltmeter id="disk_d" value="0.6"&gt60%&lt/meter&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltnav&gt
+						<td>Defines navigation links
+						<td><p>&ltnav&gt</p>
+						<p>&lta href="/html/"&gtHTML&lt/a&gt |</p>
+						<p>&lta href="/css/"&gtCSS&lt/a&gt |</p>
+						<p>&lta href="/js/"&gtJavaScript&lt/a&gt |</p>
+						<p>&lta href="/python/"&gtPython&lt/a&gt</p>
+						<p>&lt/nav&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltnoscript&gt
+						<td>Defines an alternate content for users that do not support client-side scripts
+						<td><p>&ltscript&gt</p>	
+					<p>document.write("Hello World!")</p>
+						<p>&lt/script&gt</p>
+						<p>&ltnoscript&gtYour browser does not support JavaScript!&lt/noscript&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltobject&gt</td>
+						<td>Defines a container for an external application</td>
+						<td><p>&ltobject data="pic_trulli.jpg" width="300" height="200"&gt&lt/object&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltol&gt
+						<td>Defines an ordered list
+						<td><p>&ltol&gt</p>
+						<p>&ltli&gtCoffee&lt/li&gt</p>
+						<p>&ltli&gtTea&lt/li&gt</p>
+						<p>&ltli&gtMilk&lt/li&gt</p>
+						<p>&lt/ol&gt</p>	<p></p>
+						<p>&ltol start="50"&gt</p>
+						<p>&ltli&gtCoffee&lt/li&gt</p>
+						<p>&ltli&gtTea&lt/li&gt</p>
+						<p>&ltli&gtMilk&lt/li&gt</p>
+						<p>&lt/ol&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltoptgroup&gt
+						<td>Defines a group of related options in a drop-down list
+						<td><p>&ltlabel for="cars"&gtChoose a car:&lt/label&gt</p>
+						<p>&ltselect  name="cars" id="cars"&gt</p>
+						<p>&ltoptgroup label="Swedish Cars"&gt</p>	
+					<p>&ltoption value="volvo"&gtVolvo&lt/option&gt</p>
+						<p>&ltoption value="saab"&gtSaab&lt/option&gt</p>
+						<p>&lt/optgroup&gt</p>
+						<p>&ltoptgroup label="German Cars"&gt</p>
+						<p>&ltoption value="mercedes"&gtMercedes&lt/option&gt</p>
+						<p>&ltoption value="audi"&gtAudi&lt/option&gt</p>
+						<p>&lt/optgroup&gt</p>
+						<p>&lt/select&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltoption&gt
+						<td>Defines an option in a drop-down list
+						<td><p>&ltlabel for="cars"&gtChoose a car:&lt/label&gt</p>
+						<p></p>
+						<p>&ltselect id="cars"&gt</p>
+						<p>&ltoption value="volvo"&gtVolvo&lt/option&gt</p>
+						<p>&ltoption value="saab"&gtSaab&lt/option&gt</p>
+						<p>&ltoption value="opel"&gtOpel&lt/option&gt</p>
+						<p>&ltoption value="audi"&gtAudi&lt/option&gt</p>
+						<p>&lt/select&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltoutput&gt
+						<td>Defines the result of a calculation
+						<td><p>&ltform oninput="x.value=parseInt(a.value)+parseInt(b.value)"&gt</p>
+						<p>&ltinput type="range" id="a" value="50"&gt</p>	<p>=+&ltinput type="number" id="b" value="25"&gt'</p>
+						<p>=&ltoutput name="x" for="a b"&gt&lt/output&gt'</p>
+						<p>&lt/form&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltp&gt</td>
+						<td>Defines a paragraph</td>
+						<td><p>&ltp&gtThis is some text in a paragraph.&lt/p&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltparam&gt
+						<td>Defines a parameter for an object
+						<td><p>&ltobject data="horse.wav"&gt</p>
+						<p>&ltparam name="autoplay" value="true"&gt</p>
+						<p>&lt/object&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltpicture&gt
+						<td>Defines a container for multiple image resources
+						<td><p>&ltpicture&gt</p>
+						<p>&ltsource media="(min-width:650px)" srcset="img_pink_flowers.jpg"&gt</p>	<p>&ltsource media="(min-width:465px)" srcset="img_white_flower.jpg"&gt</p>
+						<p>&ltimg src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;"&gt</p>
+						<p>&lt/picture&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltpre&gt
+						<td>Defines preformatted text
+						<td><p>&ltpre&gt</p>
+						<p>Text in a pre element</p>
+						<p>is displayed in a fixed-width</p>
+						<p>font, and it preserves</p>
+						<p>both spaces and</p>
+						<p>line breaks</p>
+						<p>&lt/pre&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltprogress&gt
+						<td>Represents the progress of a task
+						<td><p>&ltlabel for="file"&gtDownloading progress:&lt/label&gt</p>
+						<p>&ltprogress id="file" value="32" max="100"&gt 32% &lt/progress&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltq&gt
+						<td>Defines a short quotation
+						<td><p>&ltp&gtWWF's goal is to:</p>
+						<p>&ltq&gtBuild a future where people live in harmony with nature.&lt/q&gt</p>
+						<p>We hope they succeed.&lt/p&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltrp&gt
+						<td>Defines what to show in browsers that do not support ruby annotations
+						<td><p>&ltruby&gt</p>
+						<p>漢 &ltrp&gt(&lt/rp&gt&ltrt&gtㄏㄢˋ&lt/rt&gt&ltrp&gt)&lt/rp&gt</p>
+						<p>&lt/ruby&gt</p></td>
+					</tr>
+					<tr>
+						<td id="column-one">&ltrt&gt
+						<td>Defines an explanation/pronunciation of characters (for East Asian typography)
+						<td><p>&ltruby&gt</p>
+						<p>漢 &ltrt&gt ㄏㄢˋ &lt/rt&gt</p>
+						<p>&lt/ruby&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltruby&gt
+						<td>Defines a ruby annotation (for East Asian typography)
+						<td><p>&ltruby&gt</p>
+						<p>漢 &ltrt&gt ㄏㄢˋ &lt/rt&gt</p>
+						<p>&lt/ruby&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&lts&gt
+						<td>Defines text that is no longer correct
+						<td><p>&ltp&gt&lts&gtOnly 50 tickets left!&lt/s&gt&lt/p&gt</p>
+						<p>&ltp&gtSOLD OUT!&lt/p&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltsamp&gt
+						<td>Defines sample output from a computer program
+						<td><p>&ltp&gtMessage from my computer:&lt/p&gt</p>
+						<p></p>
+					
+					
+						<p>&ltp&gt&ltsamp&gtFile not found.&ltbr&gtPress F1 to continue&lt/samp&gt&lt/p&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltscript&gt
+						<td>Defines a client-side script
+						<td><p>&ltscript&gt</p>
+						<p>document.getElementById("demo").innerHTML = "Hello JavaScript!";</p>
+						<p>&lt/script&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltsearch&gt
+						<td>Defines a search section
+						<td><p>&ltsearch&gt</p>
+						<p>&ltform&gt</p>
+						<p>&ltinput name="fsrch" id="fsrch" placeholder="Search W3Schools"&gt</p>
+						<p>&lt/form&gt</p>
+						<p>&lt/search&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltsection&gt
+						<td>Defines a section in a document
+						<td><p>&ltsection&gt</p>
+						<p>&lth2&gtWWF History&lt/h2&gt</p>
+						<p>&ltp&gtThe World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.&lt/p&gt</p>
+						<p>&lt/section&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltselect&gt
+						<td>Defines a drop-down list
+						<td><p>&ltlabel for="cars"&gtChoose a car:&lt/label&gt</p>
+						<p></p>
+						<p>&ltselect name="cars" id="cars"&gt</p>
+						<p>&ltoption value="volvo"&gtVolvo&lt/option&gt</p>
+						<p>&ltoption value="saab"&gtSaab&lt/option&gt</p>
+						<p>&ltoption value="mercedes"&gtMercedes&lt/option&gt</p>
+						<p>&ltoption value="audi"&gtAudi&lt/option&gt</p>
+						<p>&lt/select&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltsmall&gt
+						<td>Defines smaller text
+						<td><p>&ltp&gtThis is some normal text.&lt/p&gt</p>
+						<p>&ltp&gt&ltsmall&gtThis is some smaller text.&lt/small&gt&lt/p&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltsource&gt
+						<td>Defines multiple media resources for media elements (&ltvideo&gt and &ltaudio&gt)
+						<td><p>&ltaudio controls&gt</p>
+						<p>&ltsource src="horse.ogg" type="audio/ogg"&gt</p>
+						<p>&ltsource src="horse.mp3" type="audio/mpeg"&gt</p>
+						<p>Your browser does not support the audio element.</p>
+						<p>&lt/audio&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltspan&gt</td>
+						<td>Defines a section in a document</td>
+						<td><p>&ltp&gtMy mother has &ltspan style="color:blue"&gtblue&lt/span&gt eyes.&lt/p&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltstrong&gt</td>
+						<td>Defines important text in Bold</td>
+						<td><p>&ltstrong&gtThis text is important!&lt/strong&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltstyle&gt
+						<td>Defines style information for a document
+						<td><p>&lthtml&gt</p>
+						<p>&lthead&gt</p>
+						<p>&ltstyle&gt</p>
+						<p>h1 {color:red;}</p>
+						<p>p {color:blue;}</p>
+						<p>&lt/style&gt</p>
+						<p>&lt/head&gt</p>
+						<p>&ltbody&gt</p>
+						<p></p>
+						<p>&lth1&gtA heading&lt/h1&gt</p>
+						<p>&ltp&gtA paragraph.&lt/p&gt</p>
+						<p></p>
+						<p>&lt/body&gt</p>
+						<p>&lt/html&gt</p></td>
+					</tr>
+					<tr>
+						<td id="column-one">&ltsub&gt</td>
+						<td>Defines subscripted text</td>
+						<td><p>&ltp&gtThis text contains &ltsub&gtsubscript&lt/sub&gt text.&lt/p&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltsummary&gt
+						<td>Defines a visible heading for a &ltdetails&gt element
+						<td><p>&ltdetails&gt</p>
+						<p>&ltsummary&gtEpcot Center&lt/summary&gt</p>
+						<p>&ltp&gtEpcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.&lt/p&gt</p>
+						<p>&lt/details&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltsup&gt</td>
+						<td>Defines superscripted text</td>
+						<td><p>&ltp&gtThis text contains &ltsup&gtsuperscript&lt/sup&gt text.&lt/p&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltsvg&gt
+						<td>Defines a container for SVG graphics
+						<td><p>&ltsvg width="100" height="100"&gt</p>
+						<p>&ltcircle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" /&gt</p>
+					
+					
+						<p>&lt/svg&gt</p></td>
+					</tr>
+					<tr>
+						<td id="column-one">&lttable&gt
+						<td>Defines a table
+						<td><p>&lttable&gt</p>
+						<p>&lttr&gt</p>
+						<p>&ltth&gtMonth&lt/th&gt</p>
+						<p>&ltth&gtSavings&lt/th&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lttr&gt</p>
+						<p>&lttd&gtJanuary&lt/td&gt</p>
+						<p>&lttd&gt$100&lt/td&gt</p>
+						<p>&lt/tr&gt</p>
+					
+						<p>&lt/table&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&lttbody&gt
+						<td>Groups the body content in a table
+						<td><p>&lttable&gt</p>
+						<p>&ltthead&gt</p>
+						<p>&lttr&gt</p>
+						<p>&ltth&gtMonth&lt/th&gt</p>
+						<p>&ltth&gtSavings&lt/th&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lt/thead&gt</p>
+						<p>&lttbody&gt</p>	<p>&lttr&gt</p>
+						<p>&lttd&gtJanuary&lt/td&gt</p>
+						<p>&lttd&gt$100&lt/td&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lttr&gt</p>
+						<p>&lttd&gtFebruary&lt/td&gt</p>
+						<p>&lttd&gt$80&lt/td&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lt/tbody&gt</p>	<p>&lttfoot&gt</p>
+						<p>&lttr&gt</p>
+						<p>&lttd&gtSum&lt/td&gt</p>
+						<p>&lttd&gt$180&lt/td&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lt/tfoot&gt</p>
+						<p>&lt/table&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&lttd&gt
+						<td>Defines a cell in a table
+						<td><p>&lttable&gt</p>
+						<p>&lttr&gt</p>	<p>&lttd&gtCell A&lt/td&gt</p>
+						<p>&lttd&gtCell B&lt/td&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lttr&gt</p>
+						<p>&lttd&gtCell C&lt/td&gt</p>
+						<p>&lttd&gtCell D&lt/td&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lt/table&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&lttemplate&gt
+						<td>Defines a container for content that should be hidden when the page loads
+						<td><p>&ltbutton onclick="showContent()"&gtShow hidden content&lt/button&gt</p>
+						<p></p>
+						<p>&lttemplate&gt</p>
+						<p>&lth2&gtFlower&lt/h2&gt</p>
+						<p>&ltimg src="img_white_flower.jpg" width="214" height="204"&gt</p>
+						<p>&lt/template&gt</p>
+						<p></p>
+						<p>&ltscript&gt</p>
+						<p>function showContent() {</p>
+						<p>let temp = document.getElementsByTagName("template")[0];</p>	<p>let clon = temp.content.cloneNode(true);</p>
+						<p>document.body.appendChild(clon);</p>
+						<p>}</p>
+						<p>&lt/script&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&lttextarea&gt
+						<td>Defines a multiline input control (text area)
+						<td><p>&ltlabel for="w3review"&gtReview of W3Schools:&lt/label&gt</p>
+						<p></p>
+						<p>&lttextarea id="w3review" name="w3review" rows="4" cols="50"&gt</p>
+						<p>At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.</p>
+						<p>&lt/textarea&gt</p></td>
+					</tr>
+					<tr>
+						<td id="column-one">&lttfoot&gt</td>
+						<td>Groups the footer content in a table
+						<td><p>&lttable&gt</p>
+						<p>&ltthead&gt</p>
+						<p>&lttr&gt</p>
+						<p>&ltth&gtMonth&lt/th&gt</p>
+						<p>&ltth&gtSavings&lt/th&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lt/thead&gt</p>
+						<p>&lttbody&gt</p>
+						<p>&lttr&gt</p> 
+						<p>&lttd&gtJanuary&lt/td&gt</p>
+						<p>&lttd&gt$100&lt/td&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lttr&gt</p>
+						<p>&lttd&gtFebruary&lt/td&gt</p>
+						<p>&lttd&gt$80&lt/td&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lt/tbody&gt</p>
+						<p>&lttfoot&gt</p>	<p>&lttr&gt</p>
+						<p>&lttd&gtSum&lt/td&gt</p>
+						<p>&lttd&gt$180&lt/td&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lt/tfoot&gt</p>
+						<p>&lt/table&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltth&gt
+						<td>Defines a header cell in a table
+						<td><p>&lttable&gt</p>
+						<p>&lttr&gt</p>
+						<p>&ltth&gtMonth&lt/th&gt</p>	<p>&ltth&gtSavings&lt/th&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lttr&gt</p>
+						<p>&lttd&gtJanuary&lt/td&gt</p>
+						<p>&lttd&gt$100&lt/td&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lttr&gt</p>
+						<p>&lttd&gtFebruary&lt/td&gt</p>
+						<p>&lttd&gt$80&lt/td&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lt/table&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltthead&gt
+						<td>Groups the header content in a table
+						<td><p>&lttable&gt</p>
+						<p>&ltthead&gt</p>
+						<p>&lttr&gt</p>
+						<p>&ltth&gtMonth&lt/th&gt</p>
+						<p>&ltth&gtSavings&lt/th&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lt/thead&gt</p>	<p>&lttbody&gt</p>
+						<p>&lttr&gt</p>
+						<p>&lttd&gtJanuary&lt/td&gt</p>
+						<p>&lttd&gt$100&lt/td&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lttr&gt</p>
+						<p>&lttd&gtFebruary&lt/td&gt</p>
+						<p>&lttd&gt$80&lt/td&gt</p>
+						<p>&lt/tr&gt</p>	<p>&lt/tbody&gt</p>
+						<p>&lttfoot&gt</p>
+						<p>&lttr&gt</p>
+						<p>&lttd&gtSum&lt/td&gt</p>
+						<p>&lttd&gt$180&lt/td&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lt/tfoot&gt</p>
+						<p>&lt/table&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&lttime&gt
+						<td>Defines a specific time (or datetime)
+						<td><p>&ltp&gtOpen from &lttime&gt10:00&lt/time&gt to &lttime&gt21:00&lt/time&gt every weekday.&lt/p&gt</p>
+						<p></p>
+						<p>&ltp&gtI have a date on &lttime datetime="2008-02-14 20:00"&gtValentines day&lt/time&gt.&lt/p&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&lttitle&gt
+						<td>Defines a title for the document
+						<td><p>&lt!DOCTYPE html&gt</p>
+						<p>&lthtml&gt</p>
+						<p>&lthead&gt</p>
+						<p>&lttitle&gtHTML Elements Reference&lt/title&gt</p>
+						<p>&lt/head&gt</p>
+						<p>&ltbody&gt</p>
+						<p></p>	<p>&lth1&gtThis is a heading&lt/h1&gt</p>
+						<p>&ltp&gtThis is a paragraph.&lt/p&gt</p>
+						<p></p>
+						<p>&lt/body&gt</p>
+						<p>&lt/html&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&lttr&gt
+						<td>Defines a row in a table
+						<td><p>&lttable&gt</p>
+						<p>&lttr&gt</p>
+						<p>&ltth&gtMonth&lt/th&gt</p>
+						<p>&ltth&gtSavings&lt/th&gt</p>	<p>&lt/tr&gt</p>
+						<p>&lttr&gt</p>
+						<p>&lttd&gtJanuary&lt/td&gt</p>
+						<p>&lttd&gt$100&lt/td&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lttr&gt</p>
+						<p>&lttd&gtFebruary&lt/td&gt</p>
+						<p>&lttd&gt$80&lt/td&gt</p>
+						<p>&lt/tr&gt</p>
+						<p>&lt/table&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&lttrack&gt
+						<td>Defines text tracks for media elements (&ltvideo&gt and &ltaudio&gt)
+						<td><p>&ltvideo width="320" height="240" controls&gt</p>
+						<p>&ltsource src="forrest_gump.mp4" type="video/mp4"&gt</p>
+						<p>&ltsource src="forrest_gump.ogg" type="video/ogg"&gt</p>
+						<p>&lttrack src="fgsubtitles_en.vtt" kind="subtitles" srclang="en" label="English"&gt</p>
+						<p>&lttrack src="fgsubtitles_no.vtt" kind="subtitles" srclang="no" label="Norwegian"&gt</p>
+					
+					
+						<p>&lt/video&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltu&gt</td>
+						<td>Defines some text that is unarticulated and styled differently from normal text</td>
+						<td><p>&ltp&gtThis is some &ltu&gtmispeled&lt/u&gt text.&lt/p&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltul&gt
+						<td>Defines an unordered list
+						<td><p>&ltul&gt</p>	<p>&ltli&gtCoffee&lt/li&gt</p>
+						<p>&ltli&gtTea&lt/li&gt</p>
+						<p>&ltli&gtMilk&lt/li&gt</p>
+					
+					
+						<p>&lt/ul&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltvar&gt</td>
+						<td>Defines a variable</td>
+						<td><p>&ltp&gtThe area of a triangle is: 1/2 x &ltvar&gtb&lt/var&gt x &ltvar&gth&lt/var&gt, where &ltvar&gtb&lt/var&gt is the base, and &ltvar&gth&lt/var&gt is the vertical height.&lt/p&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltvideo&gt
+						<td>Defines embedded video content
+						<td><p>&ltvideo width="320" height="240" controls&gt</p>
+						<p>&ltsource src="movie.mp4" type="video/mp4"&gt</p>
+						<p>&ltsource src="movie.ogg" type="video/ogg"&gt</p>
+						<p>Your browser does not support the video tag.</p>
+						<p>&lt/video&gt</p></td>
+					</tr>
+					
+					<tr>
+						<td id="column-one">&ltwbr&gt</td>
+						<td>Defines a possible line-break</td>
+						<td><p>&ltp&gtTo learn AJAX, you must be familiar with the XML&ltwbr&gtHttp&ltwbr&gtRequest Object.&lt/p&gt</p></td>
+					</tr>
+					</tbody>
+				</table>
+				</div>
+                <div>
+                    <h1>CSS Properties</h1>
+				<table>
+						<colgroup>
+							<col style="width: 200px">
+							<col style="width: 800px">
+							<col style="width: 400px">
+						</colgroup>
+						<thead class="CSS Properties">
+							<tr>
+								<th scope="col">CSS</th>
+								<th scope="col">Description</th>
+								<th scope="col">Example</th>
+					</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td id="column-one">accent-color</td>
+					<td><p>The accent-color property specifies the accent color for user-interface controls like: &ltinput type="checkbox"&gt, &ltinput type="radio"&gt, &ltinput type="range"&gt and &ltprogress&gt.</p>
+					<td><p>input[type=checkbox] {</p>
+					<p>accent-color: red;</p>
+					<p>}</p></td>
+					</tr>
+				
+				<tr>
+					<td id="column-one">align-content</td>
+					<td><p>The align-content property specifies how flex lines are distributed along the cross axis in a flexbox container.</p>
+					<p></p>
+					<p>In flexbox layout, the main axis is in the flex-direction (default is 'row', horizontal), and the cross axis is perpendicular to the main axis (default is 'column', vertical).</p>
+					<p></p>
+					<p>Tip: Use the justify-content property to align the items on the main axis (horizontally).</p>
+					<p></p>
+					<p>Note: The align-content property can also be used on a grid container to align grid items in the block direction. For pages in English, block direction is downward and inline direction is left to right.</p></td>
+					<td><p>div {</p>
+					<p>width: 70px;</p>
+					<p>height: 300px;</p>
+					<p>border: 1px solid #c3c3c3;</p>
+					<p>display: flex;</p>
+					<p>flex-wrap: wrap;</p>
+					<p>align-content: center;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">align-items</td>
+					<td><p>The align-items property specifies the default alignment for items inside a flexbox or grid container.</p>
+					<p></p>
+					<p>In a flexbox container, the flexbox items are aligned on the cross axis, which is vertical by default (opposite of flex-direction).</p>
+					<p>In a grid container, the grid items are aligned in the block direction. For pages in English, block direction is downward and inline direction is left to right.</p>
+					<p>For this property to have any alignment effect, the items need available space around themselves in the appropriate direction.</p>
+					<p></p>
+					<p>Tip: Use the align-self property of each item to override the align-items property.</p></td>
+					<td><p>div {</p>
+					<p>display: flex;</p>
+					<p>align-items: center;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">align-self</td>
+					<td><p>The align-self property specifies the alignment in the block direction for the selected item inside a flexbox or grid container.</p>
+					<p></p>
+					<p>For pages in English, block direction is downward and inline direction is left to right.</p>
+					<p></p>
+					<p>Tip: To align a grid item in the inline direction instead of the block direction, use justify-self or justify-items properties.</p>
+					<p></p>
+					<p>Note: The align-self property overrides the grid or flexible container's align-items property.</p></td>
+					<td><p>#myBlueDiv {</p>
+					<p>align-self: center;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">all</td>
+					<td><p>The all property resets all properties, apart from unicode-bidi and direction, to their initial or inherited value.</p></td>
+					<td><p>div {</p>
+					<p>background-color: yellow;</p>
+					<p>color: red;</p>
+					<p>all: initial;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">animation</td>
+					<td><p>The animation property is a shorthand property for:</p>
+					<p></p>
+					<p>animation-name</p>
+					<p>animation-duration</p>
+					<p>animation-timing-function</p>
+					<p>animation-delay</p>
+					<p>animation-iteration-count</p>
+					<p>animation-direction</p>
+					<p>animation-fill-mode</p>
+					<p>animation-play-state</p>
+					<p>Note: Always specify the animation-duration property, otherwise the duration is 0, and will never be played.</p></td>
+					<td><p>div {</p>
+					<p>animation: mymove 5s infinite;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">aspect-ratio</td>
+					<td><p>The aspect-ratio property allows you to define the ratio between width and height of an element.</p>
+					<p></p>
+					<p>If aspect-ratio and width properties are set, the height will follow in the defined aspect ratio.</p>
+					<p></p>
+					<p>To better understand the aspect-ratio property, view a demo.</p>
+					<p></p>
+					<p>Tip: Use the aspect-ratio property in responsive layouts where elements often vary in size and you want to preserve the ratio between width and height.</p></td>
+					<td><p>div {</p>
+					<p>aspect-ratio: 3 / 2;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">backdrop-filter</td>
+					<td><p>The backdrop-filter property is used to apply a graphical effect to the area behind an element.</p>
+					<p></p>
+					<p>Tip: To see the effect, the element or its background must be at least partially transparent.</p>
+					<p></p></td>
+					<td><p>div.transbox {</p>
+					<p>background-color: rgba(255, 255, 255, 0.4);</p>
+					<p>-webkit-backdrop-filter: blur(5px);</p>
+					<p>backdrop-filter: blur(5px);</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">background</td>
+					<td><p>The background property is a shorthand property for:</p>
+					<p></p>
+					<p>background-color</p>
+					<p>background-image</p>
+					<p>background-position</p>
+					<p>background-size</p>
+					<p>background-repeat</p>
+					<p>background-origin</p>
+					<p>background-clip</p>
+					<p>background-attachment</p>
+					<p>It does not matter if one of the values above are missing, e.g. background:#ff0000 url(smiley.gif); is allowed.</p></td>
+					<td><p>body {</p>
+					<p>background: lightblue url("img_tree.gif") no-repeat fixed center;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">block-size</td>
+					<td><p>The block-size property specifies the size of an element in the block direction.</p>
+					<p></p>
+					<p>Note: The related CSS property writing-mode defines block direction, and this affects the result of the block-size property. For pages in English, block direction is downward and inline direction is left to right.</p>
+					<p></p>
+					<p>The CSS block-size and inline-size properties are very similar to CSS properties width and height, but the block-size and inline-size properties are dependent on block and inline directions.</p></td>
+					<td><p>div {</p>
+					<p>block-size: 200px;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">border</td>
+					<td><p>The border property is a shorthand property for:</p>
+					<p></p>
+					<p>border-width</p>
+					<p>border-style (required)</p>
+					<p>border-color</p>
+					<p>If border-color is omitted, the color applied will be the color of the text.</p></td>
+					<td><p>h1 {</p>
+					<p>border: 5px solid red;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">border-inline</td>
+					<td><p>The border-inline property is a shorthand property for these properties:</p>
+					<p></p>
+					<p>border-inline-width</p>
+					<p>border-inline-style (required)</p>
+					<p>border-inline-color</p>
+					<p>If values for color or width are omitted, default values will be used.</p>
+					<p></p>
+					<p>The CSS border-inline property is very similar to CSS property border, but the border-inline property is dependent on the inline direction.</p>
+					<p></p>
+					<p>Note: The related CSS properties writing-mode, text-orientation and direction define inline direction. This affects where the start and end of a line is and the result of the border-inline property. For pages in English, inline direction is left to right</p></td>
+					<td><p>h1 {</p>
+					<p>border-inline: 5px solid red;</p>
+					<p>}</p>
+					<p></p>
+					<p>h2 {</p>
+					<p>border-inline: 4px dotted blue;</p>
+					<p>}</p>
+					<p></p>
+					<p>div {</p>
+					<p>border-inline: double;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">bottom</td>
+					<td><p>The bottom property affects the vertical position of a positioned element. This property has no effect on non-positioned elements.</p>
+					<p></p>
+					<p>If position: absolute; or position: fixed; - the bottom property sets the bottom edge of an element to a unit above/below the bottom edge of its nearest positioned ancestor.</p>
+					<p>If position: relative; - the bottom property makes the element's bottom edge to move above/below its normal position.</p>
+					<p>If position: sticky; - the bottom property behaves like its position is relative when the element is inside the viewport, and like its position is fixed when it is outside.</p>
+					<p>If position: static; - the bottom property has no effect.</p></td>
+					<td><p>div.absolute {</p>
+					<p>position: absolute;</p>
+					<p>bottom: 10px;</p>
+					<p>width: 50%;</p>
+					<p>border: 3px solid #8AC007;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">box-shadow</td>
+					<td><p>The box-shadow property attaches one or more shadows to an element.</p></td>
+					<td><p>#example1 {</p>
+					<p>box-shadow: 5px 10px;</p>
+					<p>}</p>
+					<p></p>
+					<p>#example2 {</p>
+					<p>box-shadow: 5px 10px #888888;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">caption-side</td>
+					<td><p>The caption-side property specifies the placement of a table caption.</p></td> 
+					<td><p>#example1 {</p>
+					<p>caption-side: bottom;</p>
+					<p>}</p>
+					<p></p>
+					<p>#example2 {</p>
+					<p>caption-side: top;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">clear</td>
+					<td><p>The clear property controls the flow next to floated elements.</p>
+					<p></p>
+					<p>The clear property specifies what should happen with the element that is next to a floating element.</p>
+					<p></p>
+					<p>Tip: Also look at the float property.</p></td>
+					<td><p>img {</p>
+					<p>float: left;</p>
+					<p>}</p>
+					<p></p>
+					<p>p.clear {</p>
+					<p>clear: left;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">clip-path</td>
+					<td><p>The clip-path property lets you clip an element to a basic shape or to an SVG source.</p>
+					<p></p>
+					<p>Note: The clip-path property replaces the deprecated clip property.</p></td>
+					<td><p>img {</p>
+					<p>clip-path: circle(50%);</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">color</td>
+					<td><p>The color property specifies the color of text.</p>
+					<p></p>
+					<p>Tip: Use a background color combined with a text color that makes the text easy to read.</p></td>
+					<td><p>body {</p>
+					<p>color: red;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">column-count</td>
+					<td><p>The column-count property specifies the number of columns an element should be divided into.</p></td>
+					<td><p>div {</p>
+					<p>column-count: 3;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">column-fill</td>
+					<td><p>The column-fill property specifies how to fill columns, balanced or not.</p>
+					<p></p>
+					<p>Tip: If you add a height to a multi-column element, you can control how the content fills the columns. The content can be balanced or filled sequentially.</p></td>
+					<td><p>.newspaper1 {</p>
+					<p>column-fill: auto;</p>
+					<p>}</p>
+					<p></p>
+					<p>.newspaper2 {</p>
+					<p>column-fill: balance;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">content</td>
+					<td><p>The content property is used with the ::before and ::after pseudo-elements, to insert generated content.</p></td>
+					<td><p>a::after {</p>
+					<p>content: " (" attr(href) ")";</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">cursor</td>
+					<td><p>The cursor property specifies the mouse cursor to be displayed when pointing over an element.</p></td>
+					<td><p>.alias {cursor: alias;}</p>
+					<p>.all-scroll {cursor: all-scroll;}</p>
+					<p>.auto {cursor: auto;}</p>
+					<p>.cell {cursor: cell;}</p>
+					<p>.col-resize {cursor: col-resize;}</p>
+					<p>.context-menu {cursor: context-menu;}</p>
+					<p>.copy {cursor: copy;}</p>
+					<p>.crosshair {cursor: crosshair;}</p>
+					<p>.default {cursor: default;}</p>
+					<p>.e-resize {cursor: e-resize;}</p>
+					<p>.ew-resize {cursor: ew-resize;}</p>
+					<p>.grab {cursor: grab;}</p>
+					<p>.grabbing {cursor: grabbing;}</p>
+					<p>.help {cursor: help;}</p>
+					<p>.move {cursor: move;}</p>
+					<p>.n-resize {cursor: n-resize;}</p>
+					<p>.ne-resize {cursor: ne-resize;}</p>
+					<p>.nesw-resize {cursor: nesw-resize;}</p>
+					<p>.ns-resize {cursor: ns-resize;}</p>
+					<p>.nw-resize {cursor: nw-resize;}</p>
+					<p>.nwse-resize {cursor: nwse-resize;}</p>
+					<p>.no-drop {cursor: no-drop;}</p>
+					<p>.none {cursor: none;}</p>
+					<p>.not-allowed {cursor: not-allowed;}</p>
+					<p>.pointer {cursor: pointer;}</p>
+					<p>.progress {cursor: progress;}</p>
+					<p>.row-resize {cursor: row-resize;}</p>
+					<p>.s-resize {cursor: s-resize;}</p>
+					<p>.se-resize {cursor: se-resize;}</p>
+					<p>.sw-resize {cursor: sw-resize;}</p>
+					<p>.text {cursor: text;}</p>
+					<p>.url {cursor: url(myBall.cur),auto;}</p>
+					<p>.w-resize {cursor: w-resize;}</p>
+					<p>.wait {cursor: wait;}</p>
+					<p>.zoom-in {cursor: zoom-in;}</p>
+					<p>.zoom-out {cursor: zoom-out;}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">direction</td>
+					<td><p>The direction property specifies the text direction/writing direction within a block-level element.</p>
+					<p></p>
+					<p>Tip: Use this property together with the unicode-bidi property to set or return whether the text should be overridden to support multiple languages in the same document.</p></td>
+					<td><p>p.rtl {</p>
+					<p>direction: rtl;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">empty-cells</td>
+					<td><p>The empty-cells property sets whether or not to display borders on empty cells in a table.</p>
+					<p></p>
+					<p>Note: This property has no effect if border-collapse is "collapse".</p></td>
+					<td><p>table {</p>
+					<p>empty-cells: hide;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">filter</td>
+					<td><p>The filter property defines visual effects (like blur and saturation) to an element (often &ltimg&gt).</p></td>
+					<td><p>img {</p>
+					<p>filter: grayscale(100%);</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">flex</td>
+					<td><p>The flex property is a shorthand property for:</p>
+					<p></p>
+					<p>flex-grow</p>
+					<p>flex-shrink</p>
+					<p>flex-basis</p>
+					<p>The flex property sets the flexible length on flexible items.</p>
+					<p></p>
+					<p>Note: If the element is not a flexible item, the flex property has no effect.</p></td>
+					<td><p>#main div {</p>
+					<p>-ms-flex: 1; /* IE 10 */</p>
+					<p>flex: 1;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">float</td>
+					<td><p>The float property specifies whether an element should float to the left, right, or not at all.</p>
+					<p></p>
+					<p>Note: Absolutely positioned elements ignore the float property!</p>
+					<p></p>
+					<p>Note: Elements next to a floating element will flow around it. To avoid this, use the clear property or the clearfix hack (see example at the bottom of this page).</p></td>
+					<td><p>img  {</p>
+					<p>float: right;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">font</td>
+					<td><p>The font property is a shorthand property for:</p>
+					<p></p>
+					<p>font-style</p>
+					<p>font-variant</p>
+					<p>font-weight</p>
+					<p>font-size/line-height</p>
+					<p>font-family</p>
+					<p>The font-size and font-family values are required. If one of the other values is missing, their default value are used.</p>
+					<p></p>
+					<p>Note: The line-height property sets the space between lines.</p></td> 
+					<td><p>p.a {</p>
+					<p>font: 15px Arial, sans-serif;</p>
+					<p>}</p>
+					<p></p>
+					<p>p.b {</p>
+					<p>font: italic small-caps bold 12px/30px Georgia, serif;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">@font-face</td>
+					<td><p>With the @font-face rule, web designers do not have to use one of the "web-safe" fonts anymore.</p>
+					<p></p>
+					<p>In the @font-face rule you must first define a name for the font (e.g. myFirstFont), and then point to the font file.</p>
+					<p></p>
+					<p>To use the font for an HTML element, refer to the name of the font (myFirstFont) through the font-family property:</p></td>
+					<td><p>@font-face {</p>
+					<p>font-family: myFirstFont;</p>
+					<p>src: url(sansation_light.woff);</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">gap</td>
+					<td><p>The gap property defines the size of the gap between the rows and between the columns in flexbox, grid or multi-column layout. It is a shorthand for the following properties:</p>
+					<p></p>
+					<p>row-gap</p>
+					<p>column-gap</p></td>
+					<td><p>.grid-container {</p>
+					<p>gap: 50px;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">grid</td>
+					<td><p>The grid property is a shorthand property for:</p>
+					<p></p>
+					<p>grid-template-rows</p>
+					<p>grid-template-columns</p>
+					<p>grid-template-areas</p>
+					<p>grid-auto-rows</p>
+					<p>grid-auto-columns</p>
+					<p>grid-auto-flow</p></td>
+					<td><p>.grid-container {</p>
+					<p>display: grid;</p>
+					<p>grid: 150px / auto auto auto;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">height</td>
+					<td><p>The height property sets the height of an element.</p>
+					<p></p>
+					<p>The height of an element does not include padding, borders, or margins!</p>
+					<p></p>
+					<p>If height: auto; the element will automatically adjust its height to allow its content to be displayed correctly.</p>
+					<p></p>
+					<p>If height is set to a numeric value (like pixels, (r)em, percentages) then if the content does not fit within the specified height, it will overflow. How the container will handle the overflowing content is defined by the overflow property.</p>
+					<p></p>
+					<p>Note: The min-height and max-height properties override the height property.</p></td>
+					<td><p>div.a {</p>
+					<p>height: auto;</p>
+					<p>border: 1px solid black;</p>
+					<p>}</p>
+					<p></p>
+					<p>div.b {</p>
+					<p>height: 50px;</p>
+					<p>border: 1px solid black;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">hyphens</td>
+					<td><p>The hyphens property defines whether hyphenation is allowed to create more soft wrap opportunities within a line of text.</p></td>
+					<td><p>&ltstyle&gt</p>
+					<p>div.a {</p>
+					<p>hyphens: none;</p>
+					<p>}</p>
+					<p></p>
+					<p>div.b {</p>
+					<p>hyphens: manual;</p>
+					<p>}</p>
+					<p></p>
+					<p>div.c {</p>
+					<p>hyphens: auto;</p>
+					<p>}</p>
+					<p>&lt/style&gt</p>
+					<p></p>
+					<p><body></p>
+					<p>&lth2&gthyphens: none&lt/h2&gt</p>
+					<p>&ltdiv class="a">A veryvery&shy;very long word.&lt/div&gt</p>
+					<p></p>
+					<p>&lth2&gthyphens: manual&lt/h2&gt</p>
+					<p>&ltdiv class="b"&gtA veryvery&shy;very long word.&lt/div&gt</p>
+					<p></p>
+					<p>&lth2&gthyphens: auto&lt/h2&gt</p>
+					<p>&ltdiv class="c"&gtA veryvery&shy;very long word.&lt/div&gt</p>
+					<p>&lt/body&gt</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">image-rendering</td>
+					<td><p>The image-rendering property specifies the type of algorithm to be used for image scaling.</p>
+					<p></p>
+					<p>Note: This property has no effect on images that are not scaled.</p></td>
+					<td><p>.image {</p>
+					<p>height: 100px;</p>
+					<p>width: 100px;</p>
+					<p>image-rendering: auto;</p>
+					<p>}</p>
+					<p></p>
+					<p>.crisp-edges {</p>
+					<p>image-rendering: -webkit-optimize-contrast;</p>
+					<p>image-rendering: crisp-edges;</p>
+					<p>}</p>
+					<p></p>
+					<p>.pixelated {</p>
+					<p>image-rendering: pixelated;</p>
+					<p>}</p>
+					<p></p>
+					<p>.smooth {</p>
+					<p>image-rendering: smooth;</p>
+					<p>}</p>
+					<p></p>
+					<p>.high-quality {</p>
+					<p>image-rendering: high-quality;</p>
+					<p>}</p></td>
+				</tr>
+				
+				<tr>
+					<td id="column-one">inline-size</td>
+					<td><p>The inline-size property specifies the size of an element in the inline direction.</p>
+					<p></p>
+					<p>Note: The related CSS property writing-mode defines inline direction, and this affects the result of the inline-size property. For pages in English, inline direction is left to right and block direction is downward.</p>
+					<p></p>
+					<p>The CSS inline-size and block-size properties are very similar to CSS properties width and height, but the inline-size and block-size properties are dependent on inline and block directions.</p></td>
+					<td><p>div {</p>
+					<p>inline-size: 200px;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">margin</td>
+					<td><p>The margin property sets the margins for an element, and is a shorthand property for the following properties:</p>
+					<p></p>
+					<p>margin-top</p>
+					<p>margin-right</p>
+					<p>margin-bottom</p>
+					<p>margin-left</p></td>
+					<td><p>p {</p>
+					<p>margin: 35px;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">max-height</td>
+					<td><p>e max-height property defines the maximum height of an element.</p>
+					<p></p>
+					<p>If the content is larger than the maximum height, it will overflow. How the container will handle the overflowing content is defined by the overflow property.</p>
+					<p></p>
+					<p>If the content is smaller than the maximum height, the max-height property has no effect.</p>
+					<p></p>
+					<p>Note: This prevents the value of the height property from becoming larger than max-height. The value of the max-height property overrides the height property.</p></td>
+					<td><p>p.ex1 {</p>
+					<p>max-height: 50px;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">max-width</td>
+					<td><p>The max-width property defines the maximum width of an element.</p>
+					<p></p>
+					<p>If the content is larger than the maximum width, it will automatically change the height of the element.</p>
+					<p></p>
+					<p>If the content is smaller than the maximum width, the max-width property has no effect.</p>
+					<p></p>
+					<p>Note: This prevents the value of the width property from becoming larger than max-width. The value of the max-width property overrides the width property.</p></td>
+					<td><p>p.ex1 {</p>
+					<p>max-width: 150px;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">min-height</td>
+					<td><p>The min-height property defines the minimum height of an element.</p>
+					<p></p>
+					<p>If the content is smaller than the minimum height, the minimum height will be applied.</p>
+					<p></p>
+					<p>If the content is larger than the minimum height, the min-height property has no effect.</p>
+					<p></p>
+					<p>Note: This prevents the value of the height property from becoming smaller than min-height.</p></td>
+					<td><p>p.ex1 {</p>
+					<p>min-height: 200px;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">min-width</td>
+					<td><p>The min-width property defines the minimum width of an element.</p>
+					<p></p>
+					<p>If the content is smaller than the minimum width, the minimum width will be applied.</p>
+					<p></p>
+					<p>If the content is larger than the minimum width, the min-width property has no effect.</p>
+					<p></p>
+					<p>Note: This prevents the value of the width property from becoming smaller than min-width.</p></td>
+					<td><p>span.ex1 {</p>
+					<p>min-width: 500px;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">@media</td>
+					<td><p>The @media rule is used in media queries to apply different styles for different media types/devices.</p>
+					<p></p>
+					<p>Media queries can be used to check many things, such as:</p>
+					<p></p>
+					<p>width and height of the viewport</p>
+					<p>width and height of the device</p>
+					<p>orientation (is the tablet/phone in landscape or portrait mode?)</p>
+					<p>resolution</p>
+					<p>Using media queries are a popular technique for delivering a tailored style sheet (responsive web design) to desktops, laptops, tablets, and mobile phones.</p>
+					<p></p>
+					<p>You can also use media queries to specify that certain styles are only for printed documents or for screen readers (mediatype: print, screen, or speech).</p>
+					<p></p>
+					<p>In addition to media types, there are also media features. Media features provide more specific details to media queries, by allowing to test for a specific feature of the user agent or display device. For example, you can apply styles to only those scree</p></td>
+					<td><p>@media only screen and (max-width: 600px) {</p>
+					<p>body {</p>
+					<p>background-color: lightblue;</p>
+					<p>}</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">object-fit</td>
+					<td><p>The object-fit property is used to specify how an &ltimg&gt or &ltvideo&gt should be resized to fit its container.</p>
+					<p></p>
+					<p>This property tells the content to fill the container in a variety of ways; such as "preserve that aspect ratio" or "stretch up and take up as much space as possible".</p></td>
+					<td><p>img.a {</p>
+					<p>width: 200px;</p>
+					<p>height: 400px;</p>
+					<p>object-fit: cover;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">object-position</td>
+					<td><p>The object-position property is used together with object-fit to specify how an &ltimg&gt or &ltvideo&gt should be positioned with x/y coordinates inside its "own content box".</p></td>
+					<td><p>img.a {</p>
+					<p>width: 200px;</p>
+					<p>height: 400px;</p>
+					<p>object-fit: none;</p>
+					<p>object-position: 5px 10%;</p>
+					<p>border: 5px solid red;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">offset</td>
+					<td><p>The offset property is used when animating an element along a path, and is a shorthand property for the following properties:</p>
+					<p></p>
+					<p>offset-anchor*</p>
+					<p>offset-distance</p>
+					<p>offset-path</p>
+					<p>offset-rotate</p>
+					<p>*currently only working in the Firefox browser</p></td>
+					<td><p>img {</p>
+					<p>offset: path('M 50 80 C 150 -20 250 180 350 80') 150px auto 45deg;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">opacity</td>
+					<td><p>The opacity property sets the opacity level for an element.</p>
+					<p></p>
+					<p>The opacity-level describes the transparency-level, where 1 is not transparent at all, 0.5 is 50% see-through, and 0 is completely transparent.</p></td>
+					<td><p>div {</p>
+					<p>opacity: 0.5;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">outline</td>
+					<td><p>An outline is a line that is drawn around elements, outside the borders, to make the element "stand out".</p>
+					<p></p>
+					<p>The outline property is a shorthand property for:</p>
+					<p></p>
+					<p>outline-width</p>
+					<p>outline-style (required)</p>
+					<p>outline-color</p>
+					<p>If outline-color is omitted, the color applied will be the color of the text.</p>
+					<p></p>
+					<p>Note: Outlines differ from borders! Unlike border, the outline is drawn outside the element's border, and may overlap other content. Also, the outline is NOT a part of the element's dimensions; the element's total width and height is not affected by the w</p></td>
+					<td><p>h2 {</p>
+					<p>outline: 5px dotted green;</p>
+					<p>}</p>
+					<p></p>
+					<p>div.a {</p>
+					<p>outline: 2px dashed blue;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">overflow</td>
+					<td><p>The overflow property specifies what should happen if content overflows an element's box.</p>
+					<p></p>
+					<p>This property specifies whether to clip content or to add scrollbars when an element's content is too big to fit in a specified area.</p>
+					<p></p>
+					<p>Note: The overflow property only works for block elements with a specified height.</p></td>
+					<td><p>div.ex1 {</p>
+					<p>overflow: scroll;</p>
+					<p>}</p>
+					<p></p>
+					<p>div.ex2 {</p>
+					<p>overflow: hidden;</p>
+					<p>}</p>
+					<p></p>
+					<p>div.ex3 {</p>
+					<p>overflow: auto;</p>
+					<p>}</p>
+					<p></p>
+					<p>div.ex4 {</p>
+					<p>overflow: clip;</p>
+					<p>}</p>
+					<p></p>
+					<p>div.ex5 {</p>
+					<p>overflow: visible;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">padding</td>
+					<td><p>An element's padding is the space between its content and its border.</p>
+					<p></p>
+					<p>The padding property is a shorthand property for:</p>
+					<p></p>
+					<p>padding-top</p>
+					<p>padding-right</p>
+					<p>padding-bottom</p>
+					<p>padding-left</p>
+					<p>Note: Padding creates extra space within an element, while margin creates extra space around an element.</p></td>
+					<td><p>p {</p>
+					<p>padding: 35px;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">position</td>
+					<td><p>The position property specifies the type of positioning method used for an element (static, relative, absolute, fixed, or sticky).</p></td>
+					<td><p>h2 {</p>
+					<p>position: absolute;</p>
+					<p>left: 100px;</p>
+					<p>top: 150px;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">resize</td>
+					<td><p>The resize property defines if (and how) an element is resizable by the user.</p>
+					<p></p>
+					<p>Note: The resize property does not apply to inline elements or to block elements where overflow="visible". So, make sure that overflow is set to "scroll", "auto", or "hidden".</p></td>
+					<td><p>div {</p>
+					<p>resize: both;</p>
+					<p>overflow: auto;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">table-layout</td>
+					<td><p>The table-layout property defines the algorithm used to lay out table cells, rows, and columns.</p>
+					<p></p>
+					<p>Tip: The main benefit of table-layout: fixed; is that the table renders much faster. On large tables, users will not see any part of the table until the browser has rendered the whole table. So, if you use table-layout: fixed, users will see the top of th</p></td>
+					<td><p>table.a {</p>
+					<p>table-layout: auto;</p>
+					<p>width: 180px;</p>
+					<p>}</p>
+					<p></p>
+					<p>table.b {</p>
+					<p>table-layout: fixed;</p>
+				 
+					<p>width: 180px;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">text-align</td>
+					<td><p>The text-align property specifies the horizontal alignment of text in an element.</p></td>
+					<td><p>div.a {</p>
+					<p>text-align: center;</p>
+					<p>}</p>
+					<p></p>
+					<p>div.b {</p>
+					<p>text-align: left;</p>
+					<p>}</p>
+					<p></p>
+					<p>div.c {</p>
+					<p>text-align: right;</p>
+					<p>}</p>
+					<p></p>
+					<p>div.c {</p>
+					<p>text-align: justify;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">text-decoration</td>
+					<td><p>The text-decoration property specifies the decoration added to text, and is a shorthand property for:</p>
+					<p></p>
+					<p>text-decoration-line (required)</p>
+					<p>text-decoration-color</p>
+					<p>text-decoration-style</p>
+					<p>text-decoration-thickness</p></td>
+					<td><p>h1 {</p>
+					<p>text-decoration: overline;</p>
+					<p>}</p>
+					<p></p>
+					<p>h2 {</p>
+					<p>text-decoration: line-through;</p>
+					<p>}</p>
+					<p></p>
+					<p>h3 {</p>
+					<p>text-decoration: underline;</p>
+					<p>}</p>
+					<p></p>
+					<p>h4 {</p>
+					<p>text-decoration: underline overline;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">text-shadow</td>
+					<td><p>The text-shadow property adds shadow to text.</p>
+					<p></p>
+					<p>This property accepts a comma-separated list of shadows to be applied to the text.</p></td>
+					<td><p>h1 {</p>
+					<p>text-shadow: 2px 2px #ff0000;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">text-transform</td>
+					<td><p>The text-transform property controls the capitalization of text.</p></td>
+					<td><p>div.a {</p>
+					<p>text-transform: uppercase;</p>
+					<p>}</p>
+					<p></p>
+					<p>div.b {</p>
+					<p>text-transform: lowercase;</p>
+					<p>}</p>
+					<p></p>
+					<p>div.c {</p>
+					<p>text-transform: capitalize;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">unicode-bidi</td>
+					<td><p>The unicode-bidi property is used together with the direction property to set or return whether the text should be overridden to support multiple languages in the same document.</p></td>
+					<td><p>div {</p>
+					<p>direction: rtl;</p>
+					<p>unicode-bidi: bidi-override;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">visibility</td>
+					<td><p>The visibility property specifies whether or not an element is visible.</p>
+					<p></p>
+					<p>Tip: Hidden elements take up space on the page. Use the display property to both hide and remove an element from the document layout!</p></td>
+					<td><p>h2.a {</p>
+					<p>visibility: visible;</p>
+					<p>}</p>
+					<p></p>
+					<p>h2.b {</p>
+					<p>visibility: hidden;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">white-space</td>
+					<td><p>The white-space property specifies how white-space inside an element is handled.</p></td>
+					<td><p>p.a {</p>
+					<p>white-space: nowrap;</p>
+					<p>}</p>
+					<p></p>
+					<p>p.b {</p>
+					<p>white-space: normal;</p>
+					<p>}</p>
+					<p></p>
+					<p>p.c {</p>
+					<p>white-space: pre;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">word-spacing</td>
+					<td><p>The word-spacing property increases or decreases the white space between words.</p>
+					<p></p>
+					<p>Note: Negative values are allowed.</p></td>
+					<td><p>p {</p>
+					<p>word-spacing: 30px;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">word-wrap</td>
+					<td><p>The word-wrap property allows long words to be able to be broken and wrap onto the next line.</p></td>
+					<td><p>div {</p>
+					<p>word-wrap: break-word;</p>
+					<p>}</p></td>
+				</tr>
+				<tr>
+					<td id="column-one">z-index</td>
+					<td><p>The z-index property specifies the stack order of an element.</p>
+					<p></p>
+					<p>An element with greater stack order is always in front of an element with a lower stack order.</p>
+					<p></p>
+					<p>Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display:flex elements).</p>
+					<p></p>
+					<p>Note: If two positioned elements overlap without a z-index specified, the element positioned last in the HTML code will be shown on top.</p></td>
+					<td><p>img {</p>
+					<p>position: absolute;</p>
+					<p>left: 0px;</p>
+					<p>top: 0px;</p>
+					<p>z-index: -1;</p>
+					<p>}</p></td>
+				</tr>
+				</tbody>
+				</thead>
+			</table>
+		</div>
+
+	</body>
+</html> 
